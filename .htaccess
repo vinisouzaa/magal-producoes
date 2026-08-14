@@ -1,0 +1,107 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1
+
+# Isso acaba bloqueando alguns programas de download também como Flashgertt, gozilla, getright
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Foobot                  [OR]
+RewriteCond %{HTTP_USER_AGENT} ^FrontPage               [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetRight                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Googlebot-Image         [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Go!Zilla                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Harvest                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^hloader                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^HMView                  [OR]
+RewriteCond %{HTTP_USER_AGENT} ^httplib                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack                 [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^humanlinks              [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Stripper         [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Sucker           [OR]
+RewriteCond %{HTTP_USER_AGENT} ^InfoNaviRobot           [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Internetseer            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^InterGET                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja         [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LexiBot                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^libWeb/clsHTTP          [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkextractorPro        [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkScan/8.1a.Unix      [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkWalker              [OR]
+RewriteCond %{HTTP_USER_AGENT} ^lwp-trivial             [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mass\ Downloader        [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mata.Hari               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Microsoft.URL           [OR]
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^MIIxpc                  [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mister.PiX              [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mister\ PiX             [OR]
+RewriteCond %{HTTP_USER_AGENT} ^moget                   [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/2               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/3.Mozilla/2.01  [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla.*NEWT           [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Navroad                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NearSite                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetMechanic             [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Net\ Vampire            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP                  [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NICErsPRO               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NPBot                   [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Octopus                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Openfind                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber             [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Papa\ Foto              [OR]
+RewriteCond %{HTTP_USER_AGENT} ^pavuk                   [OR]
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ProPowerBot/2.14        [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ProWebWalker            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ProWebWalker            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^QueryN.Metasearch       [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ReGet                   [OR]
+RewriteCond %{HTTP_USER_AGENT} ^spanner                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP               [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^suzuran                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Szukacz/1.4             [OR]
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Teleport                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Teleport\ Pro           [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Telesoft                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^The.Intraformant        [OR]
+RewriteCond %{HTTP_USER_AGENT} ^toCrawl/UrlDispatcher   [OR]
+RewriteCond %{HTTP_USER_AGENT} ^True_Robot              [OR]
+RewriteCond %{HTTP_USER_AGENT} ^turingos                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^TurnitinBot\            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^TurnitinBot/1.5         [OR]
+RewriteCond %{HTTP_USER_AGENT} ^URLy.Warning            [OR]
+RewriteCond %{HTTP_USER_AGENT} ^VCI                     [OR]
+RewriteCond %{HTTP_USER_AGENT} ^VoidEYE                 [OR]
+RewriteCond %{HTTP_USER_AGENT} ^[Ww]eb[Bb]andit         [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWW-Collector-E         [OR]
+
+#Proteção contra alguns virus e worms
+RewriteCond %{REQUEST_URI} /(admin|cmd|httpodbc|nsiislog|root|shell)\.(dll|exe) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE                [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider       [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.*$ - [L]
+
+
+
+
+
+
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 189.80.20.98
+deny from 189.80.20.
+deny from 189.70.133.
+deny from 187.54.71.

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+	<radio>
+
+		<station name="Magal Divulgações Artistícas" text="test">
+
+         	<song>
+
+                <title>Varios Artistas - Historia Real de Magal</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/historia.mp3</file>			
+
+			</song>
+
+				
+
+			<song>
+
+                <title>Bruno & Barreto-  Eu quero e rolo</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/rolo.mp3</file>			
+
+			</song>
+
+				<song>
+
+                <title>Carreiro e Capataz - Sabado a Noite Part. Loubet</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/sabado.mp3</file>			
+
+			</song>
+			
+				<song>
+
+                <title>Jads & Jadson - Noite Fracassada</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/fracassada.mp3</file>			
+
+			</song>
+			
+						
+
+				<song>
+
+                <title>João L. e Walter F. P. Loubet - Chega a Noite</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/chega_anoite.mp3</file>			
+
+			</song>
+
+				<song>
+
+                <title>Conrado e Aleksandro - to bebendo de torneira</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/bebendo-detorneira.mp3</file>			
+
+			</song>
+
+				
+				<song>
+
+                <title>Manutti - Gasto e nem ligo</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/gasto_e_nem_ligo.mp3</file>			
+
+					
+			</song>
+			
+			
+			<song>
+
+                <title>Gustavo M. e Rafael- Quem ama briga</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/QUEM-AMA-BRIGA.mp3</file>			
+
+					
+			</song>
+			
+				<song>
+
+                <title>Ataide & Alexandre - Esqueca</title>
+
+				<composer>Magal Divulgações Artistícas</composer>
+
+				<file>/musicas/esqueca.mp3</file>
+
+			</song>	
+
+			
+
+
+
+
+			</station>	
+
+	</radio>

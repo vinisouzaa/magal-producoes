@@ -1,0 +1,224 @@
+/* Estilo para o site Magal Produções | By Luis Alves, Playlan - 21/11/2014 */
+/* Reset */
+@import 'reset.css';
+
+/* Chamando as Fontes */
+@import 'chamada-fontes.css';
+
+/* Estilos comuns */
+@import 'commons.css';
+
+body{font-family:"myriad", "Trebuchet MS", "Calibri", Arial, sans-serif; background:#F3F3F3;}
+
+/****************** HEADER 
+***************************************************************************************/
+
+.header{background:url(../images/bg-header.jpg) repeat; padding:50px 0;}
+.header .logo{float:left; width:324px; height:85px;}
+
+.header .nav{float:right; margin:10px 0 0 0; max-width:625px;}
+.header .nav a{color:#fff; float:left; padding:15px 13px; font-size:14px; letter-spacing:-0.5px;}
+.header .nav a img{display:block; margin:0 auto;}
+.header .nav a:hover{background:#204468}
+
+.redes-top{float:right; position:relative;}
+.redes-top li{float:left; margin:0 10px 0 0;}
+
+.header .msg-god{width:70px; height:70px; position:absolute; top:0px; right:-80px; background:url(../images/deus-e-maior.png) no-repeat; z-index:100;}
+
+.ul-padrao .artistas img{width:310px; height:260px;}
+
+.bg1{height:350px; width:100%; display:block; margin:0 auto;}
+.backgrounds {height:350px; width:auto; display:block; margin:-5px auto 0 auto !important;}
+
+.box{width:100%; display:inline-block; background:#fff;}
+
+/****************** UL Galeria **/
+.ul-galeria .imagem-oculta{top:0px;}
+.ul-galeria img{margin:0 0 10px 0;}
+.ul-galeria{margin:20px 0 25px 0; float:left; width:660px;}
+
+.ul-padrao-pg{width:100% !important; display:inline-block !important;}
+.ul-padrao-pg li{float:left; width:31%; margin:0 2% 20px 0; text-align:center; position:relative; min-height:320px;}
+.ul-padrao-pg .imagem-oculta{position:absolute; top:0px; z-index:3; display:none;}
+
+/****************** BOX FACE HOME E RÁDIOS **/
+.face-home{float:left; width:290px; height:400px;}
+.radios{float:left; background:url(../images/radios.jpg) no-repeat; width:290px; height:130px; margin:40px 0 0 0;}
+
+/* Parceiros */
+.box-parceiros{width:100%; padding:50px 0 20px 0; display:block;}
+.box-parceiros .item{position:relative;}
+.box-parceiros .item a{float:left; position:relative; z-index:5;}
+.box-parceiros .item a img{display:block;}
+
+/* Vídeo List */
+.ul-padrao embed, .ul-padrao iframe{width:310px; height:260px; float:left; margin:0 0 10px 0;}
+.ul-padrao-pg img{margin:0 0 10px 0;}
+.pags embed, .pags iframe{width:500px; height:500px; float:left; margin:0 20px 20px 0;}
+
+/****************** BOX E RIGHT **/
+.box1{float:left; width:660px;}
+.right{float:left; width:290px;}
+
+.parceiros img{max-width:256px; max-height:100px;}
+
+/****************** RODAPÉ **/
+.footer{text-align:center; padding:15px 0 5px 0; background:#0D1C2B; border-top:1px solid #ddd;}
+.footer span{font-size:12px; color:#fff;}
+.footer .logo-developer{width:77px; height:30px; background:url(../images/logo-playlan.png) top no-repeat; float:right;}
+.footer .logo-developer:hover{background-position:bottom;}
+
+/****************** PÁGINAS INTERNAS 
+***************************************************************************************/
+/****************** pags **/
+.pags{width:950px; margin:0 auto; display:block; background:#fff; padding:10px 0 10px 0;}
+
+
+/* RÁDIOS */
+.ul-radio li{float:left; width:24%; margin:5px 1% 5px 0; text-align:center; position:relative;}
+.ul-radio li img{width:220px !important; height:200px !important;}
+.ul-radio .icon-radios{width:40px !important; height:40px !important; display:block; margin:5px auto 0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

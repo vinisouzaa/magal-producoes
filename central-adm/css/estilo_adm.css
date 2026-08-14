@@ -1,0 +1,205 @@
+/* Estilo para o site Omega mais - Luis Alves 02/Setembro/2013 */
+
+/* Chamando as Fontes */
+@import 'chamada-fontes.css';
+
+/* Reset */
+*{margin:0; padding:0;}
+
+
+/* Body */
+body{background:#E8E8E8; font:16px 'yanone';}
+
+/* Div Erro, Acerto e Página não encontrada */
+#ops{width:590px; height:200px; padding:20px; background:#FF9797; color:#fff; text-align:center; margin:0px; float:left;}
+#ops .oops{font:80px Georgia; font-variant:small-caps; letter-spacing:-6px; font-weight:bold; display:block;}
+#ops .txt{font:30px Trebuchet MS; letter-spacing:-2px; display:block;}
+
+.no{display:block; width:570px; background:#FFA6A6; float:left; padding:35px 30px 25px 30px; font:20px Trebuchet MS; color:#333; border:1px solid #aaa; text-align:center; margin:10px 0 0 0;} 
+.ok{display:block; width:570px; background:#B7FFB7; float:left; padding:35px 30px 25px 30px; font:20px Trebuchet MS; color:#333; border:1px solid #aaa; text-align:center; margin:10px 0 0 0;} 
+
+/* Voltar */
+.voltar{width:630px; text-align:center; float:left; margin:20px 0;}
+.voltar a{width:120px; height:45px; margin:0px auto; display:block; background:url(../images/voltar.png) top;}
+.voltar a:hover{background:url(../images/voltar.png) bottom;}
+
+/* LINK */
+.link{float:right; padding:13px 15px; z-index:10; background:#900; color:#fff; text-decoration:none; font:20px 'yanone'}
+.link:hover{background:#5E9C25; text-decoration:underline;}
+
+/* Paginação */
+.paginacao{float:left; margin:15px 0 30px 0; width:695px; text-align:center; font:14px "Trebuchet MS";}
+.paginacao span{padding:4px 8px; background:#aaa; color:#FFF; border:1px solid #aaa; margin:0 0px 0 4px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.paginacao a{padding:4px 8px; border:1px solid #CCC; text-decoration:none; background:#E2E2E2; color:#555; margin:0 2px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.paginacao a:hover{background:#09C; color:#FFF; border:1px solid #09C;}
+
+
+/* Mudando a cor do texto selecionado */
+::-moz-selection{background:#5E9C25; color:#FFF;}
+::selection {background:#5E9C25; color:#FFF;}
+
+/***********************************************************************************************************************************************************/
+/**************** PÁGINA DE LOGIN
+/***********************************************************************************************************************************************************/
+
+.msg{width:556px; padding:20px; display:block; margin:10px 0; font:28px "Calibri"; color:#222; letter-spacing:-2px; float:left}
+.msg span{font:20px Calibri; color:#222; letter-spacing:0; display:block; letter-spacing:-1px;}
+.certo{background:#E6FFE6; border:1px solid #D6F8CD;}
+.erro{background:#FFD9D9; border:1px solid #FFC1C1;}
+
+.body1{background:url(../images/bg_adm1.jpg) repeat;}
+.det-top{width:1230px; height:395px; display:block; margin:0 auto; background:url(../images/bg1-body-transparent.png) center top;}
+#box .msg{position:absolute; top:250px;}
+#box{position:absolute; top:50%; left:50%; width:640px; height:auto; margin-left:-270px; margin-top:-200px; text-align:left;}
+#box .tit{width:580px; height:45px;  margin:0; background:url(../images/bg-t-adm.png); padding:8px 0 0 20px;}
+#box .tit h1{font:30px 'yanone'; color:#fff;}
+
+#box .list{float:left; width:596px; padding:5px 0; min-height:43px; font:18px "yanone"; color:#222; background:#eee; margin:2px 2px;}
+
+#box .list span{float:left; width:100px; text-align:left; margin:10px 0 0 20px;}
+
+#box .list .inp{width:380px; height:20px; padding:10px; border:1px solid #ccc; font:16px 'yanone'; color:#555; margin:5px 0 0 0;}
+#box .list .inp:hover{border:1px solid #979797; background:#f4f4f4;}
+#box .list .inp:focus{border:1px solid #bbb; background:#ddd; color:#979797; color:#333;}
+
+#box .list2{float:left; width:596px; padding:10px 0; min-height:43px; color:#777; background:#eee; margin:2px 2px;}
+#box .list2 .sub{background:#0198CD; padding:8px 30px; font:26px 'yanone'; color:#fff; border:0; margin:0px 0 0 10px; cursor:pointer; font-variant:small-caps; float:left;}
+#box .list2 .sub:hover{background:#004D66;}
+
+#box .list2 label{font:18px 'yanone'; color:#09c; text-decoration:none; margin:10px 65px 0 10px; float:left; cursor:pointer;}
+#box .list2 .esqueci{font:18px 'yanone'; color:#09c; text-decoration:none; margin:10px 0px 0 20px; float:left;}
+#box .list2 .esqueci:hover, #box .list2 label:hover{color:#004D66; text-decoration:underline;}
+
+/********************************************************************************************************************************************************************************************/
+/************************************************************************************** PÁGINA HOME *****************************************************************************************/
+/********************************************************************************************************************************************************************************************/
+
+/* Clear */
+.clear{clear:both;}
+
+
+/* Header */
+#header{width:100%; height:200px; float:left; background:url(../images/bg-top-home.png) repeat-x top;}
+#header #center{width:930px; margin:0 auto;}
+
+/* Logo */
+#header .logo{width:294px; height:196px; float:left; margin:0; background:url(../images/bg-logo-adm.png) no-repeat;}
+#header .logo img{margin:50px auto; display:block;}
+
+
+/* Caixa1 */
+#header .caixa1{width:630px; height:50px; float:right;}
+#header .caixa1 .usuario{float:left; font:20px 'yanone'; color:#fff; margin:10px 10px 0 20px;}
+#header .caixa1 .data{float:right; font:20px 'yanone'; color:#fff; margin:10px 0 0 0;}
+
+
+/* Caixa2 */
+#header .caixa2{width:630px; height:116px; float:right;}
+#header .caixa2 .titulo-home{width:356px; height:54px; float:left; background:url(../images/titulo-home.png) no-repeat; margin:30px 0 0 20px;}
+#header .caixa2 .sair{float:right; margin:30px 0 0 5px; padding:10px 20px; font:20px 'yanone'; color:#fff; text-decoration:none; background:#09C;}
+#header .caixa2 .sair:hover{background:#5E9C25; text-decoration:underline;}
+
+
+/* Geral */
+#geral{width:910px; padding:10px; background:#fff; margin:0 auto;}
+.menu{width:265px; float:left; background:url(../images/bg-bg-menu-home.jpg) repeat-x #D3D3D3; margin:0 10px 0 0;}
+.menu ul{padding:10px; float:left;}
+.menu ul li{float:left; list-style:none; width:245px; position:relative; z-index:10;}
+.menu ul li:hover{background:#B5B5B5; color:#fff;}
+.menu ul li a{width:90%; height:27px; padding:8px 5%; float:left; background:url(../images/bg-menu-adm.png) repeat-x top; font:20px 'yanone'; color:#333; text-decoration:none;} 
+.menu ul li a:hover{background:url(../images/bg-menu-adm.png) repeat-x bottom #007EA8; color:#fff;}
+
+
+/* SubMenu */
+.seta{width:8px; height:11px; border:0; float:right; margin:8px 0 0 0;}
+.menu ul li ul{position:absolute; display:none; top:-10px; left:235px; border:0; float:left;}
+.menu ul li ul li a{background:url(../images/bg-menu-adm.png) repeat-x bottom; float:left; color:#fff;}
+.menu ul li ul li a:hover{text-decoration:underline;}
+.menu ul li:hover ul{display:block; z-index:2;}
+
+
+/* Rodapé */
+#rodape{width:100%; padding:30px 0 0 0; float:left; height:100px; background:url(../images/bg-rodape-home.jpg) repeat-x;}
+#rodape .center{width:930px; margin:0 auto;}
+#rodape .center .copy{font:14px 'yanone'; color:#444; float:right; margin:10px 10px 0 0;}
+#rodape .center .logo-la{width:40px; height:39px; float:right; background:url(../images/logo-la.png) top no-repeat;}
+#rodape .center .logo-la:hover{background:url(../images/logo-la.png) bottom no-repeat;}
+
+
+/* Página Principal */ 
+#principal{width:630px; float:right;}
+#principal img{float:left; margin:40px 0 0 120px;}
+
+
+/* Listar fotos */
+#box-fotos{width:630px; float:right;}
+.fotos{width:140px; height:180px; display:block; float:left; margin:7px; }
+.fotos .foto{border:5px solid #ccc; float:left;}
+.fotos .foto:hover{border:5px solid #09c;}
+.delete{float:left; margin:5px 0 0 55px;}
+
+
+/* Paginação de fotos */
+#paginacao{display:inline-block; margin:15px 0 30px 0; max-width:650px; text-align:center; font:14px "Trebuchet MS";}
+#paginacao ul li{list-style:none; float:left; min-height:35px;}
+#paginacao .pag{padding:4px 8px; border:1px solid #CCC; text-decoration:none; background:#E2E2E2; color:#555; margin:0 4px 0 0; 
+			    -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;} 
+#paginacao .pag:hover{background:#09C; color:#FFF; border:1px solid #09C;}
+#paginacao .pagoff{padding:4px 8px; background:#aaa; color:#FFF; border:1px solid #aaa; margin:0 4px 0 0; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+
+
+/* Vídeo List */
+#pags embed, #pags iframe{width:220px; height:140px; float:left; margin:0 0 10px 0;}
+
+/********************************************************************************************************************************************************************************************/
+/************************************************************************************** ELEMENTOS COMUNS ************************************************************************************/
+/********************************************************************************************************************************************************************************************/
+
+/* div para todas as páginas */
+#pags{width:630px; float:right;}
+
+/* Título 1 */
+.titulo1{font:22px 'yanone'; color:#fff; text-transform:uppercase;}
+
+#tabela{background:#09c; width:630px; float:left; margin:0; padding:0;}
+#tabela2{background:#f5f5f5; width:630px; float:left; margin:0; padding:0;}
+
+
+/* TD Título */
+.td_titulo{padding:10px 0; background:#09C;}
+
+/* TD Título 2 */
+.td_titulo2{padding:5px; background:#DFDFDF; font:18px 'yanone'; color:#555; font-weight:lighter;}
+
+/* TD Tópico */
+.td_topico{background:#ccc; color:#444; font:16px 'yanone'; font-weight:lighter; text-transform:uppercase;}
+
+/* TD Input */
+.td_input{background:#e4e4e4; font:14px Calibri; padding:3px;}
+
+.td-texto{font:18px "Calibri"; color:#777; letter-spacing:-1px;}
+
+
+/* Elementos HTML */
+/* Textarea */
+.textarea{width:486px; height:200px; padding:7px; background:#f4f4f4; border:1px solid #bbb; font:18px "Calibri","Trebuchet MS",Arial; color:#555; letter-spacing:-1px;}
+.textarea:hover{border:1px solid #999; background:#eee;}
+
+/* Input */
+.input{width:486px; min-height:20px; padding:7px; background:#f4f4f4; border:1px solid #bbb; font:18px "yanone","Trebuchet MS",Arial; color:#333;}
+.input:hover{border:1px solid #999; background:#eee;}
+
+.input2{width:186px; min-height:20px; padding:7px; background:#f4f4f4; border:1px solid #bbb; font:18px "yanone","Trebuchet MS",Arial; color:#333;}
+.input2:hover{border:1px solid #999; background:#eee;}
+
+/* Botão */
+.btn{padding:10px 20px; float:left; background:#09C; color:#fff; border:0; font:16px 'yanone', Calibri; font-weight:lighter; cursor:pointer; text-transform:uppercase; margin:0 0 0 10px;}
+.btn:hover{background:#5E9C25; color:#FFFFFF;}
+
+/* Select */
+.select{width:300px;  padding:10px; background:#f4f4f4; border:1px solid #bbb; font:14px "Tahoma",Arial; color:#333; font-weight:bold;}
+.select:hover{border:1px solid #999; background:#eee;}
+
+/* Disabled */
+.disabled{width:486px; height:20px; padding:7px; background:#f3f3f3; font:14px "Tahoma","Trebuchet MS",Arial; color:#bbb; border:1px solid #ddd;}
+.disabled:hover{background:#ccc; border:1px solid #ccc; color:#999;}

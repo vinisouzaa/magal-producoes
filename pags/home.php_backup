@@ -1,0 +1,117 @@
+﻿<div class="fix">
+
+
+  <div class="box-titulo">
+    <span class="titulo1">MAGAL DIVULGAÇÕES ARTÍSTICAS</span>
+    <span class="texto1">“Magal aqui colocoremos uma frase de impacto,  você pode escolher ou eu posso sugerir uma boa frase. Este texto é apenas um modelo para visualização.”</span>
+  </div>
+  <!-- Titulo -->
+  
+  <div class="box1">
+  
+    <ul class="ul-padrao">
+    
+	  <?php
+      
+		$sqlArt = 'SELECT * FROM posts WHERE cat_slug = "artistas" ORDER BY id DESC LIMIT 1';
+		try{
+		$queryArt = $con->prepare($sqlArt);
+		$queryArt->execute();
+		$resArt = $queryArt->fetchAll(PDO::FETCH_ASSOC);
+		
+		}catch (PDOexception $errorSelectArt){
+		 echo 'Erro ao selecionar '.$errorSelectArt->getMessage();
+		}
+		foreach($resArt as $dadosArt);
+      
+      ?>
+      
+      <li class="artistas">
+        <span class="titulo2">ARTISTAS</span>
+        <a href="<?php echo $urlBase.'/'.$dadosArt['cat_slug'].'/'.$dadosArt['titulo_slug']; ?>" title="<?php echo $dadosArt['titulo']; ?>">
+          <img src="<?php echo $urlBase; ?>/images/read-artistas.png" alt="" class="imagem-oculta" />
+          <img src="<?php echo $urlBase; ?>/timthumb.php?src=<?php echo $urlBase.'/images/categorias/'.$dadosArt['pasta'].'/'.$dadosArt['imagem']; ?>&w=330&h=275&zc=1&q=100" 
+            alt="">
+        </a>
+      </li>
+      
+	  <?php
+      
+		$sqlDepo = 'SELECT * FROM posts WHERE cat_slug = "depoimentos" ORDER BY id DESC LIMIT 1';
+		try{
+		$queryDepo = $con->prepare($sqlDepo);
+		$queryDepo->execute();
+		$resDepo   = $queryDepo->fetchAll(PDO::FETCH_ASSOC);
+		
+		}catch (PDOexception $errorSelectDepo){
+		 echo 'Erro ao selecionar '.$errorSelectDepo->getMessage();
+		}
+		foreach($resDepo as $dadosDepo);
+      
+      ?>
+      
+      <li class="artistas">
+        <span class="titulo2">DEPOIMENTOS <a href="<?php echo $urlBase.'/depoimentos'; ?>" class="link1">Ver mais</a></span>
+        <a href="" title="">
+          <?php echo $dadosDepo['url']; ?>
+        </a>
+      </li>
+    </ul>
+    <!-- ul padrão -->
+            
+    <ul class="ul-padrao ul-galeria">
+      <span class="titulo2">GALERIA DE FOTOS</span>
+      
+	  <?php
+      
+		$sqlGal = 'SELECT * FROM posts WHERE cat_slug = "galeria" ORDER BY id DESC LIMIT 2';
+		try{
+		$queryGal = $con->prepare($sqlGal);
+		$queryGal->execute();
+		$resGal   = $queryGal->fetchAll(PDO::FETCH_ASSOC);
+		
+		}catch (PDOexception $errorSelectGal){
+		 echo 'Erro ao selecionar '.$errorSelectGal->getMessage();
+		}
+		foreach($resGal as $dadosGal){
+      
+      ?>
+      
+      <li>
+        <a href="<?php echo $urlBase.'/'.$dadosGal['cat_slug'].'/'.$dadosGal['titulo_slug']; ?>" title="<?php echo $dadosGal['titulo']; ?>">
+          <img src="<?php echo $urlBase; ?>/images/read-fotos.png" alt="" class="imagem-oculta" />
+          <img src="<?php echo $urlBase; ?>/timthumb.php?src=<?php echo $urlBase; ?>/images/categorias/<?php echo $dadosGal['pasta'].'/'.$dadosGal['imagem']; ?>&w=330&h=165&zc=1&q=100" alt="">
+          <span class="texto1">
+		  <strong><?php echo limitaTexto($dadosGal['titulo'], 60);?></strong><br /><br />
+		  <?php
+             $dataEv = renomeiaData($dadosGal['data']); 
+             echo $dataEv['dia'].'/'.$dataEv['mes'];
+          ?>
+          </span>
+        </a>
+      </li>
+      
+      <?php } ?>
+      
+    </ul>
+    <!-- ul padrão -->
+  
+  </div>
+  <!-- box1 -->
+  
+  <div class="right">
+  
+    <div class="face-home">
+      <span class="titulo2">FACEBOOK</span>
+      <img src="images/faCEAPAGA.jpg" class="face-">
+    </div>
+    <!-- facebook -->
+    
+    <a href="<?php echo $urlBase.'/radios' ?>" title="Rádios" class="radios"></a>
+  
+  </div>
+  <!-- right -->
+  
+  
+</div>
+<!-- fix -->

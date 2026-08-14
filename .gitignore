@@ -1,0 +1,32 @@
+# Credenciais e configurações locais
+Connections/config.php
+.env
+.env.*
+!.env.example
+
+# Arquivos que expõem informações do servidor
+info.php
+
+# Conteúdo temporário ou regenerável
+cache/
+.well-known/
+*.log
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Bancos e backups locais
+*.sql
+*.sql.gz
+
+# Arquivo acima do limite de 100 MiB do GitHub
+downloads/CD_VOL_2.rar
+
+# Arquivo isolado para revisão de segurança
+css/fontes/config.php
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+

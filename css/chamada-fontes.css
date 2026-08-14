@@ -1,0 +1,15 @@
+/* Chamada das fontes */
+@font-face {
+	font-family: 'yanone';
+	src: url('fontes/YanoneKaffeesatz-Regular.eot');
+	src: local('☺'), url('fontes/YanoneKaffeesatz-Regular.woff') format('woff'), url('fontes/YanoneKaffeesatz-Regular.ttf') format('truetype'), url('fontes/YanoneKaffeesatz-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'myriad';
+	src: url('fontes/MyriadPro-Regular.eot');
+	src: local('☺'), url('fontes/MyriadPro-Regular.woff') format('woff'), url('fontes/MyriadPro-Regular.ttf') format('truetype'), url('fontes/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

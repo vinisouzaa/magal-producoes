@@ -1,0 +1,90 @@
+/****************** COMUNS 
+***************************************************************************************/
+/****************** UL PADRÃO **/
+.ul-padrao{/* padrão: width:100%; display:inline-block;*/ }
+.ul-padrao li{float:left; width:49%; margin:0 1% 0 0;  text-align:center; position:relative;}
+.ul-padrao li a{color:#777;}
+.ul-padrao li a:hover span{color:#000;}
+.ul-padrao li img{width:100%;}
+.ul-padrao .imagem-oculta{position:absolute; top:34px; z-index:3; display:none;}
+
+/****************** UL PADRÃƒO GALERIA DE FOTOS **/
+.ul-pg{width:100%; display:inline-block; margin:15px 0 10px 0;}
+.ul-pg li a{width:200px; height:160px; float:left; margin:0 25px 25px 0; border:4px solid #ddd;}
+.ul-pg li a:hover{border-color:#204468;}
+
+/****************** INPUTS **/
+.inp{min-height:30px; padding:5px; background:url(../images/bg-input.jpg) repeat-x top; border:1px solid #e6e6e6; font:18px yanone; color:#777;}
+.inp:hover{border-color:#ccc;}
+.inp:focus{background-position:bottom; border-color:#ccc;}
+
+/****************** TEXTOS **/
+.titulo1{display:block; font:28px "myriad", "Trebuchet MS", sans-serif; letter-spacing:-1px; text-transform:uppercase; margin:20px 0; text-align:center; color:#444; font-weight:bold;}
+.titulo2{display:block; font:20px "Trebuchet MS", "myriad", sans-serif; letter-spacing:-0.7px; text-transform:uppercase; font-weight:bold; margin:0 0 10px 0; color:#444; text-align:left;}
+.titulo3{display:block; font:28px "Trebuchet MS", "myriad", sans-serif; letter-spacing:-0.7px; text-transform:uppercase; font-weight:bold; margin:20px 0; color:#444; text-align:left;}
+
+.texto1{display:block; font-size:16px; letter-spacing:-0.3px; color:#777;}
+.texto2{display:block; font-size:18px; letter-spacing:-0.3px; color:#777;}
+.texto3{display:block; font-size:20px; letter-spacing:-0.8px; font-weight:bold; color:#777;}
+.texto4{display:block; font-size:22px; letter-spacing:-0.8px;}
+
+.box-titulo{text-align:center; margin:-10px 0 25px 0; display:inline-block; width:100%;}
+.box-titulo .texto1{margin:-10px 0 0 0;}
+.box-titulo .titulo1{margin-bottom:10px;}
+.box-titulo .align-left{text-align:left;}
+
+/****************** DIVS **/
+.clear{clear:both;}
+.fix{width:950px; margin:0 auto; display:block;}
+.cem-porcento{width:100%; display:inline-block;}
+
+/****************** LINKS **/
+.voltar{width:100%; display:inline-block; margin:15px 0;}
+.voltar a{padding:10px 20px; background:#ddd; color:#777; float:left; font:0.85em "Myriad Pro", "Trebuchet MS", "sans-serif";}
+.voltar a:hover{background:#204468; color:#fff;}
+
+.link1{float:right; color:#fff !important; margin:0 20px 0 0; font-size:12px; padding:5px 10px; background:#0F1F2E;}
+.link1:hover{background:#204468;}
+
+/****************** PAGINAÇÃO **/
+.paginacao{margin:15px 0 15px 0; width:100%; display:inline-block; text-align:center; font:0.85em "Myriad Pro", "Trebuchet MS", "sans-serif";}
+.paginacao span{padding:6px 8px; background:#ddd; color:#777; margin:0 6px 0 0; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.paginacao a{padding:6px 8px; background:#999; color:#fff; margin:0 2px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.paginacao a:hover{background:#0F1F2E; color:#FFF;}
+
+/****************** PAGINAÇÃO DA GALERIA DE FOTOS **/
+.pagFotos{margin:15px 0 15px 0; width:100%; display:inline-block; text-align:center; font:0.9em "Myriad Pro", "Trebuchet MS", "sans-serif";}
+.pagFotos .pagoff{padding:4px 8px; background:#e5e5e5; color:#777; margin:0 3px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; float:left;}
+.pagFotos a{padding:4px 8px; background:#204468; color:#fff; margin:0 3px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; float:left;}
+.pagFotos a:hover{background:#0F1F2E;}
+
+/****************** MENSAGENS **/
+.msg{width:100%; padding:20px; display:inline-block; margin:10px 0; font:28px "Calibri"; color:#222; letter-spacing:-2px; }
+.msg span{font:20px Calibri; color:#222; letter-spacing:0; display:block; letter-spacing:-1px;}
+.certo{background:#D6F8CD; border:1px solid #D6F8CD;}
+.erro{background:#FFD9D9; border:1px solid #FFC1C1;}
+
+/****************** PÁGINA FALE CONOSCO **/
+.contato{width:100%; margin:1% 0; float:left; }
+.contato .label{float:left; width:95%; margin:0 0% 0.5% 0;}
+.contato .input{width:100%; display:inline-block; padding:0.7%; border:1px solid #ccc; color:#999; font:18px "yanone";}
+.contato .label2{float:left; width:43%; margin:0 6.5% 0.5% 0;}
+.contato .input2{width:107%; padding:1% 1%; border:1px solid #ccc; color:#999; font:18px "yanone";}
+.contato .textarea{width:94.5%; padding:1% 1%; border:1px solid #ccc; color:#999; font:18px "yanone"; min-height:80px;}
+.contato .submit{float:left; padding:10px 15px; background:#ddd; color:#777; border:0; font:1em "Myriad Pro", "sans-serif"; cursor:pointer; margin:0.5% 0 0 0;}
+.contato .submit:hover{background:#FF7F00; color:#fff;}
+.contato-pg{width:100%;}
+.endP{font-size:14px; display:block; color:#555; margin:0% 0 4% 0;}
+.foneP{font:1.6em "Myriad Pro", "sans-serif"; color:#FF7F00; letter-spacing:-2px; margin:1% 0 0 0; display:block;}
+
+/****************** PÁGINA POST 
+***************************************************************************************/
+.box-texto{width:100%; padding:1% 0; display:inline-block;}
+.foto-pg{margin:0 20px 20px 0; float:left;}
+.bx{width:100%; display:inline-block; margin:5px 0; font:1em "Myriad Pro", "Trebuchet MS", "sans-serif";}
+.bx .data{float:left; margin:6px 3% 0 0; color:#777; font-style:italic;}
+.bx .tags a{float:left; padding:5px; font:1em "Myriad Pro", "Trebuchet MS", "sans-serif"; background:#ddd; color:#777; margin:0 5px 0 0;} 
+.bx .tags a:hover{background:#3B5998; color:#fff;}
+.bx .redes{float:left; margin:0 0 0 3%;}
+.bx .redes .twitter{float:left; margin:0px 0 0 5px; width:100px;}
+.bx .redes .face{float:left; margin:0px 0 0 0; width:100px;}
