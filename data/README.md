@@ -1,36 +1,30 @@
-# Conteúdo recuperado sem o banco de dados
+# Conteúdo recuperado do banco original
 
-Este diretório reúne o conteúdo que foi possível reconstruir a partir dos
-arquivos do backup, de materiais do próprio responsável pelo site e de fontes
-públicas.
+Este diretório reúne o conteúdo público recuperado do banco
+`vsmktcombr_magal`, extraído do backup de 20/08/2026.
 
-## Arquivos
+## Arquivos principais
 
-- `artistas.csv`: nomes e endereços antigos das páginas de artistas.
-- `servicos.md`: texto integral da página institucional de Serviços.
-- `radios.csv`: relação de rádios, cidades e frequências.
+- `artistas.csv`: 8 artistas, páginas e caminhos exatos das imagens;
+- `servicos.md`: texto integral da página de Serviços;
+- `radios.csv`: 99 rádios com nome, cidade, frequência, site e imagem;
+- `radios-pesquisa-2026.csv`: relação reconstruída anteriormente por pesquisa
+  pública, preservada para comparação histórica;
+- `banco-publico/*.sql`: estrutura MySQL e dados públicos seguros de banners,
+  categorias, páginas, parceiros e rádios.
 
-## Origem dos dados
+## Segurança
 
-- Os artistas foram recuperados de `rss.xml` e `sitemap.xml`, presentes no
-  backup do site.
-- O texto de Serviços foi recuperado da página institucional ainda acessível
-  em `https://www.magalproducoes.com.br/institucional/servicos`.
-- Os nomes e as cidades das rádios vieram da relação enviada em 14/08/2024,
-  nos arquivos “Relação-Radios_MT - Magal 2.pdf” e
-  “Relação-Radios_MT - Leo - Magal.pdf”.
-- As frequências não constavam nos PDFs nem no backup. Elas foram reconstruídas
-  por pesquisa pública em 17/08/2026.
+As tabelas administrativas `usuarios` e `configuracoes` foram excluídas da
+cópia publicada porque continham logins, senhas, códigos e configurações
+privadas de e-mail. Os 405 registros brutos de `posts` também não foram
+versionados porque galerias e depoimentos antigos contêm dados pessoais e
+informações sensíveis. Os dados públicos necessários de artistas e Serviços
+estão disponíveis nos arquivos próprios deste diretório.
 
-## Atenção sobre as frequências
+## Conferência dos arquivos
 
-Rádios podem trocar de frequência, nome ou rede. A coluna `status` distingue:
-
-- `confirmada`: frequência encontrada em fonte recente ou na própria emissora;
-- `historica`: corresponde à marca da relação, mas a rádio mudou de nome ou
-  frequência depois;
-- `a_confirmar`: houve conflito entre fontes ou não foi possível confirmar uma
-  frequência terrestre.
-
-Assim, `radios.csv` serve como base de reconstrução, mas as linhas marcadas
-`a_confirmar` devem ser validadas antes da publicação definitiva.
+- imagens dos artistas encontradas no repositório: 8 de 8;
+- imagens das rádios encontradas no repositório: 99 de 99;
+- mídias vinculadas às publicações encontradas: 268 de 274;
+- seis imagens ausentes pertencem somente a galerias antigas.

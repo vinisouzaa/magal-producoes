@@ -19,6 +19,7 @@ cache/
 # Bancos e backups locais
 *.sql
 *.sql.gz
+!data/banco-publico/*.sql
 
 # Arquivo acima do limite de 100 MiB do GitHub
 downloads/CD_VOL_2.rar
@@ -29,4 +30,3 @@ css/fontes/config.php
 # Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
-
