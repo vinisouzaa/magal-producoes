@@ -29,3 +29,7 @@ Buscar parceria, melhor organização e estrutura, para os artistas fazerem bons
 ## 7. Promotores de Eventos
 
 Visitar os promotores visando transparência referencia no município e região, experiência em parceria para que ambos tenham tranquilidade e um evento com resultado positivo e um grande sucesso.
+
+---
+
+Fonte: tabela `paginas` do banco original `vsmktcombr_magal`, backup de 20/08/2026.
